@@ -2,7 +2,7 @@ package tk.dto.general;
 
 public class GeneralDTO {
 	
-	private int generalNo;
+	private int generalno;
 	private String name;
 	private String nickname;
 	private int command;
@@ -11,11 +11,11 @@ public class GeneralDTO {
 	private int politic;
 	private String story;
 	
-	public int getGeneralNo() {
-		return generalNo;
+	public int getGeneralno() {
+		return generalno;
 	}
-	public void setGeneralNo(int generalNo) {
-		this.generalNo = generalNo;
+	public void setGeneralno(int generalno) {
+		this.generalno = generalno;
 	}
 	public String getName() {
 		return name;
@@ -58,6 +58,11 @@ public class GeneralDTO {
 	}
 	public void setStory(String story) {
 		this.story = story;
+	}
+	@Override
+	public String toString() {
+		return "GeneralDTO [generalno=" + generalno + ", name=" + name + ", nickname=" + nickname + ", command="
+				+ command + ", power=" + power + ", brain=" + brain + ", politic=" + politic + ", story=" + story + "]";
 	}
 
 }

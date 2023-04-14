@@ -1,5 +1,22 @@
 package tk.controller.search.general;
 
-public class searchGeneralController {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+import tk.dto.general.GeneralSearchConditionDTO;
+import tk.service.search.general.SearchGeneralService;
+
+@Controller
+public class searchGeneralController {
+	
+	@Autowired
+	private SearchGeneralService searchGeneralService;
+
+	@RequestMapping("/searchGeneral.do")
+	public String searchGeneral(GeneralSearchConditionDTO generalSearchDTO, Model model) {
+		model.addAttribute("generalList", searchGeneralService.searchGeneral(generalSearchDTO));
+		return "searchGeneral.jsp";
+	}
 }
