@@ -1,4 +1,4 @@
-package tk.service.search.general;
+package tk.service.general;
 
 import java.util.List;
 
@@ -15,8 +15,7 @@ public class SearchGeneralServiceLogic {
 	@Autowired
 	private SqlSessionTemplate excuteQuery;
 	
-	public List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO generalSearchDTO) {
-		return excuteQuery.selectList("searchGeneralMapper.searchGeneral", generalSearchDTO);
+	public List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO searchGeneralConditionDTO) {
+		return excuteQuery.selectList("searchGeneralMapper.searchGeneral", searchGeneralConditionDTO);
 	}
-
 }

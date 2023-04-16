@@ -3,17 +3,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>로그인 에러 화면</title>
+<title>Default 에러 화면</title>
 </head>
 <body bgcolor="#ffffff" text="#000000">
-	<!-- 타이틀 시작 -->
+
 	<table width="100%" border="1" cellspacing="0" cellpadding="0">
 		<tr>
-			<td align="center" bgcolor="orange"><b>로그인 에러 화면입니다.</b></td>
+			<td align="center" bgcolor="orange"><b>Default 에러 화면입니다.</b></td>
 		</tr>
 	</table>
 	<br>
-	<!-- 에러 메시지 -->
+	
 	<table width="100%" border="1" cellspacing="0" cellpadding="0"
 		align="center">
 		<tr>
@@ -24,5 +24,6 @@
 			<br></td>
 		</tr>
 	</table>
+	
 </body>
 </html>

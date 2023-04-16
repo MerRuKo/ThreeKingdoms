@@ -18,17 +18,17 @@
 	
 	<!-- 예외 처리 설정 -->
 	<bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="defaultErrorView" value="error/errorDefault.jsp" />
 		<property name="exceptionMappings">
 			<props>
 				<prop key="java.lang.IllegalArgumentException">
-					error/loginError.jsp
+					error/errorIllegalArgument.jsp
 				</prop>
 				<prop key="java.lang.NullPointerException">
-					error/insertBoardError.jsp
+					error/errorNullPointer.jsp
 				</prop>
 			</props>
 		</property>
-		<property name="defaultErrorView" value="error/error.jsp" />
 	</bean>
 	
 </beans>

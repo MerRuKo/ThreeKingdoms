@@ -1,4 +1,4 @@
-package tk.service.search.general;
+package tk.service.general;
 
 import java.util.List;
 
@@ -12,10 +12,9 @@ import tk.dto.general.SearchGeneralConditionDTO;
 public class SearchGeneralServiceImpl implements SearchGeneralService {
 	
 	@Autowired
-	SearchGeneralServiceLogic searchGeneralLogic;
+	SearchGeneralServiceLogic searchGeneralServiceLogic;
 	
-	public List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO generalSearchDTO) {
-		return searchGeneralLogic.searchGeneral(generalSearchDTO);
+	public List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO searchGeneralConditionDTO) {
+		return searchGeneralServiceLogic.searchGeneral(searchGeneralConditionDTO);
 	}	
-
 }

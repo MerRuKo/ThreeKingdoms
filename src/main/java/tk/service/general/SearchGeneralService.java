@@ -1,4 +1,4 @@
-package tk.service.search.general;
+package tk.service.general;
 
 import java.util.List;
 
@@ -7,6 +7,5 @@ import tk.dto.general.SearchGeneralConditionDTO;
 
 public interface SearchGeneralService {
 	
-	List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO generalSearchDTO);
-
+	List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO searchGeneralConditionDTO);
 }
