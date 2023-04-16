@@ -2,11 +2,11 @@ package tk.service.search.general;
 
 import java.util.List;
 
-import tk.dto.general.GeneralDTO;
-import tk.dto.general.GeneralSearchConditionDTO;
+import tk.dto.general.SearchGeneralDTO;
+import tk.dto.general.SearchGeneralConditionDTO;
 
 public interface SearchGeneralService {
 	
-	List<GeneralDTO> searchGeneral(GeneralSearchConditionDTO generalSearchDTO);
+	List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO generalSearchDTO);
 
 }

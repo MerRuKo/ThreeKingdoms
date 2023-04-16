@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tk.dto.general.GeneralDTO;
-import tk.dto.general.GeneralSearchConditionDTO;
+import tk.dto.general.SearchGeneralDTO;
+import tk.dto.general.SearchGeneralConditionDTO;
 
 @Service
 public class SearchGeneralServiceImpl implements SearchGeneralService {
@@ -14,7 +14,7 @@ public class SearchGeneralServiceImpl implements SearchGeneralService {
 	@Autowired
 	SearchGeneralServiceLogic searchGeneralLogic;
 	
-	public List<GeneralDTO> searchGeneral(GeneralSearchConditionDTO generalSearchDTO) {
+	public List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO generalSearchDTO) {
 		return searchGeneralLogic.searchGeneral(generalSearchDTO);
 	}	
 

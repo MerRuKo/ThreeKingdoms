@@ -6,8 +6,8 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import tk.dto.general.GeneralDTO;
-import tk.dto.general.GeneralSearchConditionDTO;
+import tk.dto.general.SearchGeneralDTO;
+import tk.dto.general.SearchGeneralConditionDTO;
 
 @Repository
 public class SearchGeneralServiceLogic {
@@ -15,7 +15,7 @@ public class SearchGeneralServiceLogic {
 	@Autowired
 	private SqlSessionTemplate excuteQuery;
 	
-	public List<GeneralDTO> searchGeneral(GeneralSearchConditionDTO generalSearchDTO) {
+	public List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO generalSearchDTO) {
 		return excuteQuery.selectList("searchGeneralMapper.searchGeneral", generalSearchDTO);
 	}
 

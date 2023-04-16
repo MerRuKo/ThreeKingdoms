@@ -33,35 +33,38 @@
 <body>
 	<div class="form-container">
 		<form action="searchGeneral.do" method="get">
-			<label for="searchName">이름:</label><input name="searchName" type="text"/><br>
-			<label for="searchNickname">자:</label><input name="searchNickname" type="text"/><br>
+			<label for="searchKingdoms">국가</label><input name="searchKingdoms" type="text"/><br>
+			<label for="searchBelongs">소속</label><input name="searchBelongs" type="text"/><br>
+			<label for="searchName">이름</label><input name="searchName" type="text"/><br>
+			<label for="searchNickname">자</label><input name="searchNickname" type="text"/><br>
 			<input type="submit" value="검색">
 		</form>
 	</div>
 	<table>
 		<tr>
-			<th>상품명</th>
-			<th>카테고리</th>
-			<th>가격</th>
-			<th>등록일자</th>
+			<th>상세</th>
+			<th>국가</th>
+			<th>소속</th>
+			<th>이름</th>
+			<th>자</th>
+			<th>통솔</th>
+			<th>무력</th>
+			<th>지력</th>
+			<th>정치</th>
 		</tr>
 		<c:forEach items="${generalList }" var="general">
 		<tr>
+			<td><a href="searchGeneralDetail.jsp">상세</a></td>
+			<td>${general. kingdoms}</td>
+			<td>${general. belongs}</td>
 			<td>${general. name}</td>
 			<td>${general. nickname}</td>
+			<td>${general. command}</td>
+			<td>${general. power}</td>
+			<td>${general. brain}</td>
+			<td>${general. politic}</td>
 		</tr>
 		</c:forEach>
-		<tr>
-			<td>상품 2</td>
-			<td>카테고리 2</td>
-			<td>200,000</td>
-			<td>2022-02-01</td>
-		</tr>
-		<tr>
-			<td>상품 3</td>
-			<td>카테고리 3</td>
-			<td>300,000</td>
-		</tr>
 	</table>
   </body>
 </html>
