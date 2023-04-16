@@ -18,4 +18,8 @@ public class SearchGeneralServiceLogic {
 	public List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO searchGeneralConditionDTO) {
 		return excuteQuery.selectList("searchGeneralMapper.searchGeneral", searchGeneralConditionDTO);
 	}
+	
+	public SearchGeneralDTO searchGeneralDetail(SearchGeneralDTO searchGeneralDTO) {
+		return excuteQuery.selectOne("searchGeneralMapper.searchGeneralDetail", searchGeneralDTO);
+	}
 }

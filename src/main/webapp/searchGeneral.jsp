@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>검색 결과</title>
+	<title>장수 목록</title>
 	<style>
 		.form-container {
 			margin: 20px;
@@ -43,6 +43,7 @@
 	<table>
 		<tr>
 			<th>상세</th>
+			<th>번호</th>
 			<th>국가</th>
 			<th>소속</th>
 			<th>이름</th>
@@ -54,7 +55,8 @@
 		</tr>
 		<c:forEach items="${generalList }" var="general">
 		<tr>
-			<td><a href="searchGeneralDetail.jsp">상세</a></td>
+			<td><a href="searchGeneralDetail.do?generalno=${general.generalno }">상세</a></td>
+			<td>${general. generalno}</td>
 			<td>${general. kingdoms}</td>
 			<td>${general. belongs}</td>
 			<td>${general. name}</td>

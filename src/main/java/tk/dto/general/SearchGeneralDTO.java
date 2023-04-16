@@ -2,6 +2,7 @@ package tk.dto.general;
 
 public class SearchGeneralDTO {
 	
+	private int generalno;
 	private String kingdoms;
 	private String belongs;
 	private String name;
@@ -12,6 +13,12 @@ public class SearchGeneralDTO {
 	private int politic;
 	private String story;
 	
+	public int getGeneralno() {
+		return generalno;
+	}
+	public void setGeneralno(int generalno) {
+		this.generalno = generalno;
+	}
 	public String getKingdoms() {
 		return kingdoms;
 	}

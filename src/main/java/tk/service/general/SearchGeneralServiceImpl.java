@@ -16,5 +16,9 @@ public class SearchGeneralServiceImpl implements SearchGeneralService {
 	
 	public List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO searchGeneralConditionDTO) {
 		return searchGeneralServiceLogic.searchGeneral(searchGeneralConditionDTO);
+	}
+	
+	public SearchGeneralDTO searchGeneralDetail(SearchGeneralDTO searchGeneralDTO) {
+		return searchGeneralServiceLogic.searchGeneralDetail(searchGeneralDTO);
 	}	
 }

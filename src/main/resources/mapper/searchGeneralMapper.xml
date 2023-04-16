@@ -5,7 +5,31 @@
 <mapper namespace="searchGeneralMapper">
 	
 	<select id="searchGeneral" resultType="tk.dto.general.SearchGeneralDTO">
-		SELECT 
+		SELECT
+		generalno,
+		kingdomsnm AS kingdoms,
+		belongsnm AS belongs,
+		name,
+		nickname,
+		command,
+		power,
+		brain,
+		politic
+		
+		FROM tk_g_general ge
+		
+		INNER JOIN tk_m_kingdoms kg
+		ON kg.kingdomsno = ge.kingdomsno
+		
+		INNER JOIN tk_m_belongs bl
+		ON bl.belongsno = ge.belongsno
+		
+		ORDER BY ge.generalno ASC
+	</select>
+	
+	<select id="searchGeneralDetail" resultType="tk.dto.general.SearchGeneralDTO">
+		SELECT
+		generalno,
 		kingdomsnm AS kingdoms,
 		belongsnm AS belongs,
 		name,
@@ -24,7 +48,7 @@
 		INNER JOIN tk_m_belongs bl
 		ON bl.belongsno = ge.belongsno
 		
-		ORDER BY generalno ASC
+		WHERE ge.generalno = #{generalno}
 	</select>
 
 </mapper>
