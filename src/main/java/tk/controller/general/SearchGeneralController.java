@@ -9,7 +9,7 @@ import tk.dto.general.SearchGeneralConditionDTO;
 import tk.service.general.SearchGeneralService;
 
 @Controller
-public class searchGeneralController {
+public class SearchGeneralController {
 	
 	@Autowired
 	private SearchGeneralService searchGeneralService;
