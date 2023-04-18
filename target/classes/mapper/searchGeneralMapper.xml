@@ -24,6 +24,20 @@
 		INNER JOIN tk_m_belongs bl
 		ON bl.belongsno = ge.belongsno
 		
+		WHERE 1 = 1
+		<if test="searchName != null">
+		AND name LIKE '%' || #{searchName } || '%'
+		</if>
+		<if test="searchNickname != null">
+		AND nickname LIKE '%' || #{searchNickname } || '%'
+		</if>
+		<if test="searchKingdoms != null">
+		AND kingdomsnm LIKE '%' || #{searchKingdoms } || '%'
+		</if>
+		<if test="searchBelongs != null">
+		AND belongsnm LIKE '%' || #{searchBelongs } || '%'
+		</if>
+		
 		ORDER BY ge.generalno ASC
 	</select>
 	

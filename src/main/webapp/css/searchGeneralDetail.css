@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+	.searchGeneralDetail {
+		text-align: center;
+		margin: 25px;
+	}
+	
+	.searchGeneralDetailPortrait {
+		width: 446px;
+		height: 630px;
+	}
+	
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 24px;
+		max-width: 700px;
+		margin: 20px auto;
+	}
+	
+	th {
+		background-color: lightgray;
+		border: 1px solid black;
+	}
+	
+	td {
+		padding: 10px;
+		border: 1px solid black;
+	}
+	
+	textarea {
+		width: 100%;
+		max-width: 700px;
+		height: 200px;
+		margin: 20px auto;
+		display: block;
+		border: 1px solid black;
+		padding: 10px;
+		font-size: 16px;
+		line-height: 1.5;
+	}

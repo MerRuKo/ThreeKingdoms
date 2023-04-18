@@ -4,50 +4,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>장수 목록</title>
-	<style>
-		.form-container {
-			margin: 20px;
-			padding: 20px;
-			background-color: #f2f2f2;
-		}
-		
-		table {
-			border-collapse: collapse;
-			width: 100%;
-			margin: 20px;
-		}
-		
-		th, td {
-			text-align: left;
-			padding: 8px;
-			border-bottom: 1px solid #ddd;
-		}
-		
-		th {
-			background-color: #4CAF50;
-			color: white;
-		}
-	</style>
+<title>장수</title>
+<link rel="stylesheet" type="text/css" href="css/searchGeneral.css">
 </head>
 <body>
-	<div class="form-container">
+<jsp:include page="header.jsp" />
+	<div class="searchGeneralSearch">
 		<form action="searchGeneral.do" method="get">
+			<label for="searchName">성명</label><input name="searchName" type="text"/><br>
+			<label for="searchNickname">　자</label><input name="searchNickname" type="text"/><br>
 			<label for="searchKingdoms">국가</label><input name="searchKingdoms" type="text"/><br>
 			<label for="searchBelongs">소속</label><input name="searchBelongs" type="text"/><br>
-			<label for="searchName">이름</label><input name="searchName" type="text"/><br>
-			<label for="searchNickname">자</label><input name="searchNickname" type="text"/><br>
 			<input type="submit" value="검색">
+			<input type="button" value="등록" onClick="location.href='#'">
 		</form>
 	</div>
 	<table>
 		<tr>
 			<th>상세</th>
-			<th>번호</th>
+			<th>성명</th>
+			<th>자</th>
 			<th>국가</th>
 			<th>소속</th>
-			<th>이름</th>
-			<th>자</th>
 			<th>통솔</th>
 			<th>무력</th>
 			<th>지력</th>
@@ -55,12 +33,11 @@
 		</tr>
 		<c:forEach items="${generalList }" var="general">
 		<tr>
-			<td><a href="searchGeneralDetail.do?generalno=${general.generalno }">상세</a></td>
-			<td>${general. generalno}</td>
-			<td>${general. kingdoms}</td>
-			<td>${general. belongs}</td>
+			<td><a class="searchGeneralA" href="searchGeneralDetail.do?generalno=${general.generalno }">상세</a></td>
 			<td>${general. name}</td>
 			<td>${general. nickname}</td>
+			<td>${general. kingdoms}</td>
+			<td>${general. belongs}</td>
 			<td>${general. command}</td>
 			<td>${general. power}</td>
 			<td>${general. brain}</td>
@@ -68,5 +45,6 @@
 		</tr>
 		</c:forEach>
 	</table>
-  </body>
+<jsp:include page="footer.jsp" />
+</body>
 </html>

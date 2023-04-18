@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+	.home {
+		text-align: center;
+		margin: 25px;
+	}
+	
+	.homeImage {
+		width: 960px;
+		height: 540px;
+	}
