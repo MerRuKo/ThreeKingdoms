@@ -5,12 +5,12 @@
 <link rel="stylesheet" type="text/css" href="css/header.css">
 </head>
 <body>
-<header class="header">
-	<h1 class="headerH1">ThreeKingdoms</h1>
-	<a class="headerA" href="home.jsp">홈</a>
-	<a class="headerA" href="searchGeneral.jsp">장수</a>
-	<a class="headerA" href="#">거점</a>
-	<a class="headerA" href="#">내정보</a>
-	<a class="headerA" href="#">로그인</a>
+<header class="header"><br>
+	<label>ThreeKingdoms</label><br><br>
+	<a href="home.jsp">홈</a>
+	<a href="searchGeneral.jsp">장수</a>
+	<a href="#">거점</a>
+	<a href="#">내정보</a>
+	<a href="#">로그인</a>
 </header>
 </body>

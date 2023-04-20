@@ -9,18 +9,19 @@
 </head>
 <body>
 <jsp:include page="header.jsp" />
-	<div class="searchGeneralSearch">
-		<form action="searchGeneral.do" method="get">
-			<label for="searchName">성명</label><input name="searchName" type="text"/><br>
-			<label for="searchNickname">　자</label><input name="searchNickname" type="text"/><br>
-			<label for="searchKingdoms">국가</label><input name="searchKingdoms" type="text"/><br>
-			<label for="searchBelongs">소속</label><input name="searchBelongs" type="text"/><br>
-			<input type="submit" value="검색">
-			<input type="button" value="등록" onClick="location.href='#'">
-		</form>
-	</div>
+<div class="searchGeneralSearch">
+	<form action="searchGeneral.do" method="get">
+		<label for="searchName">성명</label><input name="searchName" type="text"/><br>
+		<label for="searchNickname">　자</label><input name="searchNickname" type="text"/><br>
+		<label for="searchKingdoms">국가</label><input name="searchKingdoms" type="text"/><br>
+		<label for="searchBelongs">소속</label><input name="searchBelongs" type="text"/><br>
+		<input type="submit" value="검색"><br>
+		<input type="button" value="신규신청" onClick="location.href='applyGeneral.jsp'">
+		<input type="button" value="승인대기" onClick="location.href='#'">
+	</form>
 	<table>
 		<tr>
+			<th>번호</th>
 			<th>상세</th>
 			<th>성명</th>
 			<th>자</th>
@@ -33,7 +34,8 @@
 		</tr>
 		<c:forEach items="${generalList }" var="general">
 		<tr>
-			<td><a class="searchGeneralA" href="searchGeneralDetail.do?generalno=${general.generalno }">상세</a></td>
+			<td>${general. generalno}</td>
+			<td><a href="searchGeneralDetail.do?generalno=${general.generalno }">상세</a></td>
 			<td>${general. name}</td>
 			<td>${general. nickname}</td>
 			<td>${general. kingdoms}</td>
@@ -45,6 +47,7 @@
 		</tr>
 		</c:forEach>
 	</table>
+</div>
 <jsp:include page="footer.jsp" />
 </body>
 </html>

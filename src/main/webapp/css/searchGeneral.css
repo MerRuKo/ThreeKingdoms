@@ -2,16 +2,15 @@
 
 	.searchGeneralSearch {
 		text-align: center;
-		margin-top: 20px;
 		font-size: 30px;
 	}
 	
-	label {
+	.searchGeneralSearch label {
   		font-weight: bold;
 		margin-right: 10px;
 	}
 	
-	input[type="text"] {
+	.searchGeneralSearch input[type="text"] {
 		padding: 10px;
 		margin-bottom: 15px;
 		border-radius: 5px;
@@ -19,17 +18,18 @@
 		width: 300px;
 	}
 
-	input[type="submit"] {
+	.searchGeneralSearch input[type="submit"] {
 		background-color: rgb(55, 55, 55);
 		color: white;
 		padding: 10px 20px;
+		margin-bottom: 10px;
 		border: none;
 		border-radius: 5px;
 		cursor: pointer;
 		font-size: 18px;
 	}
 	
-	input[type="button"] {
+	.searchGeneralSearch input[type="button"] {
 		background-color: rgb(55, 55, 55);
 		color: white;
 		padding: 10px 20px;
@@ -39,15 +39,15 @@
 		font-size: 18px;
 	}
 
-	input[type="submit"]:hover {
+	.searchGeneralSearch input[type="submit"]:hover {
 		background-color: rgb(40, 40, 40);
 	}
 	
-	input[type="button"]:hover {
+	.searchGeneralSearch input[type="button"]:hover {
 		background-color: rgb(40, 40, 40);
 	}
 
-	table {
+	.searchGeneralSearch table {
 		border-collapse: collapse;
 		width: 100%;
 		font-size: 24px;
@@ -55,17 +55,17 @@
 		margin: 20px auto;
 	}
 	
-	.searchGeneralA {
+	.searchGeneralSearch a {
 		text-decoration: none;
 		color: rgb(206, 158, 34);
 	}
 		
-	th {
+	.searchGeneralSearch th {
 		background-color: lightgray;
 		border: 1px solid black;
 	}
 	
-	td {
+	.searchGeneralSearch td {
 		padding: 10px;
 		border: 1px solid black;
 	}

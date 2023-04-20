@@ -8,9 +8,10 @@
 </head>
 <body>
 <jsp:include page="header.jsp" />
-	<div class="home">
-		<img class="homeImage" src="images/home.jpg" alt="home" />
-	</div>
+<div class="home">
+	<p>Welcome {} !</p>
+	<img src="images/home.jpg" alt="home" />
+</div>
 <jsp:include page="footer.jsp" />
 </body>
 </html>

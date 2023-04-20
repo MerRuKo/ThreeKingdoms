@@ -14,7 +14,8 @@
 		command,
 		power,
 		brain,
-		politic
+		politic,
+		story
 		
 		FROM tk_g_general ge
 		
