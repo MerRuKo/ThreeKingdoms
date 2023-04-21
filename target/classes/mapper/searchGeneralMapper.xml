@@ -4,7 +4,7 @@
 
 <mapper namespace="searchGeneralMapper">
 	
-	<select id="searchGeneral" resultType="tk.dto.general.SearchGeneralDTO">
+	<select id="searchGeneralList" resultType="tk.dto.general.SearchGeneralDTO">
 		SELECT
 		generalno,
 		kingdomsnm AS kingdoms,
@@ -17,7 +17,7 @@
 		politic,
 		story
 		
-		FROM tk_g_general ge
+		FROM tk_m_general ge
 		
 		INNER JOIN tk_m_kingdoms kg
 		ON kg.kingdomsno = ge.kingdomsno
@@ -55,7 +55,7 @@
 		politic,
 		story
 		
-		FROM tk_g_general ge
+		FROM tk_m_general ge
 		
 		INNER JOIN tk_m_kingdoms kg
 		ON kg.kingdomsno = ge.kingdomsno

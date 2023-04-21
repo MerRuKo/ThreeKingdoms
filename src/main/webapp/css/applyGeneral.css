@@ -4,6 +4,10 @@
 		text-align: center;
 	}
 	
+	.applyGeneral input[type="file"] {
+		margin-left: 80px;
+	}
+	
 	.applyGeneral table {
 		border-collapse: collapse;
 		font-size: 16px;

@@ -14,11 +14,12 @@ public class SearchGeneralServiceImpl implements SearchGeneralService {
 	@Autowired
 	SearchGeneralServiceLogic searchGeneralServiceLogic;
 	
-	public List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO searchGeneralConditionDTO) {
-		return searchGeneralServiceLogic.searchGeneral(searchGeneralConditionDTO);
+	public List<SearchGeneralDTO> searchGeneralList(SearchGeneralConditionDTO searchGeneralConditionDTO) {
+		return searchGeneralServiceLogic.searchGeneralList(searchGeneralConditionDTO);
 	}
 	
 	public SearchGeneralDTO searchGeneralDetail(SearchGeneralDTO searchGeneralDTO) {
 		return searchGeneralServiceLogic.searchGeneralDetail(searchGeneralDTO);
-	}	
+	}
+	
 }

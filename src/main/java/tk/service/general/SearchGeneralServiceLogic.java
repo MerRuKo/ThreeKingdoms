@@ -15,11 +15,12 @@ public class SearchGeneralServiceLogic {
 	@Autowired
 	private SqlSessionTemplate excuteQuery;
 	
-	public List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO searchGeneralConditionDTO) {
-		return excuteQuery.selectList("searchGeneralMapper.searchGeneral", searchGeneralConditionDTO);
+	public List<SearchGeneralDTO> searchGeneralList(SearchGeneralConditionDTO searchGeneralConditionDTO) {
+		return excuteQuery.selectList("searchGeneralMapper.searchGeneralList", searchGeneralConditionDTO);
 	}
 	
 	public SearchGeneralDTO searchGeneralDetail(SearchGeneralDTO searchGeneralDTO) {
 		return excuteQuery.selectOne("searchGeneralMapper.searchGeneralDetail", searchGeneralDTO);
 	}
+	
 }

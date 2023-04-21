@@ -9,47 +9,47 @@
 <body>
 <jsp:include page="header.jsp" />
     <div class="searchGeneralDetail">
-	<img src="images/portrait/${generalDetail.generalno }.png" alt="portrait" />
+	<img src="images/portrait/${searchGeneralDetail.generalno }.png" alt="portrait" />
 		<table>
         <tr>
           <th>번호</th>
-          <td>${generalDetail. generalno }</td>
+          <td>${searchGeneralDetail. generalno }</td>
         </tr>
         <tr>
           <th>성명</th>
-          <td>${generalDetail. name }</td>
+          <td>${searchGeneralDetail. name }</td>
         </tr>
         <tr>
           <th>자</th>
-          <td>${generalDetail. nickname }</td>
+          <td>${searchGeneralDetail. nickname }</td>
         </tr>
         <tr>
           <th>국가</th>
-          <td>${generalDetail. kingdoms }</td>
+          <td>${searchGeneralDetail. kingdoms }</td>
         </tr>
         <tr>
           <th>소속</th>
-          <td>${generalDetail. belongs }</td>
+          <td>${searchGeneralDetail. belongs }</td>
         </tr>
         <tr>
           <th>통솔</th>
-          <td>${generalDetail. command }</td>
+          <td>${searchGeneralDetail. command }</td>
         </tr>
         <tr>
           <th>무력</th>
-          <td>${generalDetail. power }</td>
+          <td>${searchGeneralDetail. power }</td>
         </tr>
         <tr>
           <th>지력</th>
-          <td>${generalDetail. brain }</td>
+          <td>${searchGeneralDetail. brain }</td>
         </tr>
         <tr>
           <th>정치</th>
-          <td>${generalDetail. politic }</td>
+          <td>${searchGeneralDetail. politic }</td>
         </tr>
     	</table>
-      	<textarea readonly>${generalDetail. story }</textarea>
-      	<input type="button" value="뒤로" onClick="location.href='searchGeneral.do'">
+      	<textarea readonly>${searchGeneralDetail. story }</textarea>
+      	<input type="button" value="뒤로" onClick="location.href='searchGeneralList.do'">
     </div>
 <jsp:include page="footer.jsp" />
 </body>

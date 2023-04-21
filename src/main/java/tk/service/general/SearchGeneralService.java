@@ -7,7 +7,8 @@ import tk.dto.general.SearchGeneralConditionDTO;
 
 public interface SearchGeneralService {
 	
-	List<SearchGeneralDTO> searchGeneral(SearchGeneralConditionDTO searchGeneralConditionDTO);
+	List<SearchGeneralDTO> searchGeneralList(SearchGeneralConditionDTO searchGeneralConditionDTO);
 	
 	SearchGeneralDTO searchGeneralDetail(SearchGeneralDTO searchGeneralDTO);
+	
 }

@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
-	.searchGeneralSearch {
+	.searchGeneralList {
 		text-align: center;
 		font-size: 30px;
 	}
 	
-	.searchGeneralSearch label {
+	.searchGeneralList label {
   		font-weight: bold;
 		margin-right: 10px;
 	}
 	
-	.searchGeneralSearch input[type="text"] {
+	.searchGeneralList input[type="text"] {
 		padding: 10px;
 		margin-bottom: 15px;
 		border-radius: 5px;
@@ -18,7 +18,7 @@
 		width: 300px;
 	}
 
-	.searchGeneralSearch input[type="submit"] {
+	.searchGeneralList input[type="submit"] {
 		background-color: rgb(55, 55, 55);
 		color: white;
 		padding: 10px 20px;
@@ -29,7 +29,7 @@
 		font-size: 18px;
 	}
 	
-	.searchGeneralSearch input[type="button"] {
+	.searchGeneralList input[type="button"] {
 		background-color: rgb(55, 55, 55);
 		color: white;
 		padding: 10px 20px;
@@ -39,15 +39,15 @@
 		font-size: 18px;
 	}
 
-	.searchGeneralSearch input[type="submit"]:hover {
+	.searchGeneralList input[type="submit"]:hover {
 		background-color: rgb(40, 40, 40);
 	}
 	
-	.searchGeneralSearch input[type="button"]:hover {
+	.searchGeneralList input[type="button"]:hover {
 		background-color: rgb(40, 40, 40);
 	}
 
-	.searchGeneralSearch table {
+	.searchGeneralList table {
 		border-collapse: collapse;
 		width: 100%;
 		font-size: 24px;
@@ -55,17 +55,17 @@
 		margin: 20px auto;
 	}
 	
-	.searchGeneralSearch a {
+	.searchGeneralList a {
 		text-decoration: none;
 		color: rgb(206, 158, 34);
 	}
 		
-	.searchGeneralSearch th {
+	.searchGeneralList th {
 		background-color: lightgray;
 		border: 1px solid black;
 	}
 	
-	.searchGeneralSearch td {
+	.searchGeneralList td {
 		padding: 10px;
 		border: 1px solid black;
 	}

@@ -1,23 +1,21 @@
 package tk.dto.general;
 
-public class SearchGeneralDTO {
+public class ApplyGeneralDTO {
 	
-	private int generalno;
+	private int applyno;
 	private String name;
 	private String nickname;
-	private String kingdoms;
-	private String belongs;
 	private int command;
 	private int power;
 	private int brain;
 	private int politic;
 	private String story;
 	
-	public int getGeneralno() {
-		return generalno;
+	public int getApplyno() {
+		return applyno;
 	}
-	public void setGeneralno(int generalno) {
-		this.generalno = generalno;
+	public void setApplyno(int applyno) {
+		this.applyno = applyno;
 	}
 	public String getName() {
 		return name;
@@ -30,18 +28,6 @@ public class SearchGeneralDTO {
 	}
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
-	}
-	public String getKingdoms() {
-		return kingdoms;
-	}
-	public void setKingdoms(String kingdoms) {
-		this.kingdoms = kingdoms;
-	}
-	public String getBelongs() {
-		return belongs;
-	}
-	public void setBelongs(String belongs) {
-		this.belongs = belongs;
 	}
 	public int getCommand() {
 		return command;

@@ -5,19 +5,19 @@
 <html>
 <head>
 <title>장수</title>
-<link rel="stylesheet" type="text/css" href="css/searchGeneral.css">
+<link rel="stylesheet" type="text/css" href="css/searchGeneralList.css">
 </head>
 <body>
 <jsp:include page="header.jsp" />
-<div class="searchGeneralSearch">
-	<form action="searchGeneral.do" method="get">
+<div class="searchGeneralList">
+	<form action="searchGeneralList.do" method="get">
 		<label for="searchName">성명</label><input name="searchName" type="text"/><br>
 		<label for="searchNickname">　자</label><input name="searchNickname" type="text"/><br>
 		<label for="searchKingdoms">국가</label><input name="searchKingdoms" type="text"/><br>
 		<label for="searchBelongs">소속</label><input name="searchBelongs" type="text"/><br>
 		<input type="submit" value="검색"><br>
 		<input type="button" value="신규신청" onClick="location.href='applyGeneral.jsp'">
-		<input type="button" value="승인대기" onClick="location.href='#'">
+		<input type="button" value="승인대기" onClick="location.href='applyGeneralList.do'">
 	</form>
 	<table>
 		<tr>
@@ -32,18 +32,18 @@
 			<th>지력</th>
 			<th>정치</th>
 		</tr>
-		<c:forEach items="${generalList }" var="general">
+		<c:forEach items="${searchGeneralList }" var="searchGeneral">
 		<tr>
-			<td>${general. generalno}</td>
-			<td><a href="searchGeneralDetail.do?generalno=${general.generalno }">상세</a></td>
-			<td>${general. name}</td>
-			<td>${general. nickname}</td>
-			<td>${general. kingdoms}</td>
-			<td>${general. belongs}</td>
-			<td>${general. command}</td>
-			<td>${general. power}</td>
-			<td>${general. brain}</td>
-			<td>${general. politic}</td>
+			<td>${searchGeneral. generalno}</td>
+			<td><a href="searchGeneralDetail.do?generalno=${searchGeneral.generalno }">상세</a></td>
+			<td>${searchGeneral. name}</td>
+			<td>${searchGeneral. nickname}</td>
+			<td>${searchGeneral. kingdoms}</td>
+			<td>${searchGeneral. belongs}</td>
+			<td>${searchGeneral. command}</td>
+			<td>${searchGeneral. power}</td>
+			<td>${searchGeneral. brain}</td>
+			<td>${searchGeneral. politic}</td>
 		</tr>
 		</c:forEach>
 	</table>

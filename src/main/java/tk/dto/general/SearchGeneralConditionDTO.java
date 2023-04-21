@@ -2,23 +2,11 @@ package tk.dto.general;
 
 public class SearchGeneralConditionDTO {
 	
-	private String searchKingdoms;
-	private String searchBelongs;
 	private String searchName;
 	private String searchNickname;
+	private String searchKingdoms;
+	private String searchBelongs;
 	
-	public String getSearchKingdoms() {
-		return searchKingdoms;
-	}
-	public void setSearchKingdoms(String searchKingdoms) {
-		this.searchKingdoms = searchKingdoms;
-	}
-	public String getSearchBelongs() {
-		return searchBelongs;
-	}
-	public void setSearchBelongs(String searchBelongs) {
-		this.searchBelongs = searchBelongs;
-	}
 	public String getSearchName() {
 		return searchName;
 	}
@@ -31,4 +19,17 @@ public class SearchGeneralConditionDTO {
 	public void setSearchNickname(String searchNickname) {
 		this.searchNickname = searchNickname;
 	}
+	public String getSearchKingdoms() {
+		return searchKingdoms;
+	}
+	public void setSearchKingdoms(String searchKingdoms) {
+		this.searchKingdoms = searchKingdoms;
+	}
+	public String getSearchBelongs() {
+		return searchBelongs;
+	}
+	public void setSearchBelongs(String searchBelongs) {
+		this.searchBelongs = searchBelongs;
+	}
+	
 }
