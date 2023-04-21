@@ -34,16 +34,16 @@
 		</tr>
 		<c:forEach items="${searchGeneralList }" var="searchGeneral">
 		<tr>
-			<td>${searchGeneral. generalno}</td>
+			<td>${searchGeneral. generalno }</td>
 			<td><a href="searchGeneralDetail.do?generalno=${searchGeneral.generalno }">상세</a></td>
-			<td>${searchGeneral. name}</td>
-			<td>${searchGeneral. nickname}</td>
-			<td>${searchGeneral. kingdoms}</td>
-			<td>${searchGeneral. belongs}</td>
-			<td>${searchGeneral. command}</td>
-			<td>${searchGeneral. power}</td>
-			<td>${searchGeneral. brain}</td>
-			<td>${searchGeneral. politic}</td>
+			<td>${searchGeneral. name }</td>
+			<td>${searchGeneral. nickname }</td>
+			<td>${searchGeneral. kingdoms }</td>
+			<td>${searchGeneral. belongs }</td>
+			<td>${searchGeneral. command }</td>
+			<td>${searchGeneral. power }</td>
+			<td>${searchGeneral. brain }</td>
+			<td>${searchGeneral. politic }</td>
 		</tr>
 		</c:forEach>
 	</table>

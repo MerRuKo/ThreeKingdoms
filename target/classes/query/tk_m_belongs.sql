@@ -7,6 +7,7 @@ SELECT * FROM tk_m_belongs;
 
 commit;
 
+INSERT INTO tk_m_belongs VALUES (0,'무소속');
 INSERT INTO tk_m_belongs VALUES (1,'허창');
 INSERT INTO tk_m_belongs VALUES (2,'성도');
 INSERT INTO tk_m_belongs VALUES (3,'건업');

@@ -22,4 +22,16 @@ public class ApplyGeneralServiceLogic {
 		return excuteQuery.selectList("applyGeneralMapper.applyGeneralList");
 	}
 	
+	public ApplyGeneralDTO applyGeneralDetail(ApplyGeneralDTO applyGeneralDTO) {
+		return excuteQuery.selectOne("applyGeneralMapper.applyGeneralDetail", applyGeneralDTO);
+	}
+	
+	public int applyGeneralInsert(ApplyGeneralDTO applyGeneralDTO) {
+		return excuteQuery.insert("applyGeneralMapper.applyGeneralInsert", applyGeneralDTO);
+	}
+	
+	public int applyGeneralDelete(ApplyGeneralDTO applyGeneralDTO) {
+		return excuteQuery.delete("applyGeneralMapper.applyGeneralDelete", applyGeneralDTO);
+	}
+	
 }

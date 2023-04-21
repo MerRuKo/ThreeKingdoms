@@ -10,4 +10,10 @@ public interface ApplyGeneralService {
 	
 	List<ApplyGeneralDTO> applyGeneralList();
 	
+	ApplyGeneralDTO applyGeneralDetail(ApplyGeneralDTO applyGeneralDTO);
+
+	int applyGeneralInsert(ApplyGeneralDTO applyGeneralDTO);
+	
+	int applyGeneralDelete(ApplyGeneralDTO applyGeneralDTO);
+	
 }

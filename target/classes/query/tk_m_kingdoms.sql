@@ -7,6 +7,7 @@ SELECT * FROM tk_m_kingdoms;
 
 commit;
 
+INSERT INTO tk_m_kingdoms VALUES (0,'재야');
 INSERT INTO tk_m_kingdoms VALUES (1,'위');
 INSERT INTO tk_m_kingdoms VALUES (2,'촉');
 INSERT INTO tk_m_kingdoms VALUES (3,'오');

@@ -24,18 +24,19 @@
 		</tr>
 		<c:forEach items="${applyGeneralList }" var="applyGeneral">
 		<tr>
-			<td>${applyGeneral. applyno}</td>
-			<td><a href="#">상세</a></td>
-			<td>${applyGeneral. name}</td>
-			<td>${applyGeneral. nickname}</td>
-			<td>${applyGeneral. command}</td>
-			<td>${applyGeneral. power}</td>
-			<td>${applyGeneral. brain}</td>
-			<td>${applyGeneral. politic}</td>
+			<td>${applyGeneral. applyno }</td>
+			<td><a href="applyGeneralDetail.do?applyno=${applyGeneral. applyno }">상세</a></td>
+			<td>${applyGeneral. name }</td>
+			<td>${applyGeneral. nickname }</td>
+			<td>${applyGeneral. command }</td>
+			<td>${applyGeneral. power }</td>
+			<td>${applyGeneral. brain }</td>
+			<td>${applyGeneral. politic }</td>
 		</tr>
 		</c:forEach>
 	</table>
 	</form>
+	<input type="button" value="뒤로" onClick="location.href='searchGeneralList.do'">
 </div>
 <jsp:include page="footer.jsp" />
 </body>

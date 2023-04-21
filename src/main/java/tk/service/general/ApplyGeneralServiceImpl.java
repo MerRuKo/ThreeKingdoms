@@ -21,4 +21,16 @@ public class ApplyGeneralServiceImpl implements ApplyGeneralService {
 		return applyGeneralServiceLogic.applyGeneralList();
 	}
 	
+	public ApplyGeneralDTO applyGeneralDetail(ApplyGeneralDTO applyGeneralDTO) {
+		return applyGeneralServiceLogic.applyGeneralDetail(applyGeneralDTO);
+	}
+	
+	public int applyGeneralInsert(ApplyGeneralDTO applyGeneralDTO) {
+		return applyGeneralServiceLogic.applyGeneralInsert(applyGeneralDTO);
+	}
+	
+	public int applyGeneralDelete(ApplyGeneralDTO applyGeneralDTO) {
+		return applyGeneralServiceLogic.applyGeneralDelete(applyGeneralDTO);
+	}
+	
 }
