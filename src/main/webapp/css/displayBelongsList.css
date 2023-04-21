@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+	.displayBelongsList {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.displayBelongsList table {
+		border-collapse: collapse;
+		width: 50%;
+		font-size: 24px;
+		table-layout: fixed;
+		margin: 20px auto;
+	}
+		
+	.displayBelongsList th {
+		background-color: lightgray;
+		border: 1px solid black;
+	}
+	
+	.displayBelongsList td {
+		padding: 10px;
+		border: 1px solid black;
+	}

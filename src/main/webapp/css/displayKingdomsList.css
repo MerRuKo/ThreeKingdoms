@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+	.displayKingdomsList {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.displayKingdomsList table {
+		border-collapse: collapse;
+		width: 50%;
+		font-size: 24px;
+		table-layout: fixed;
+		margin: 20px auto;
+	}
+		
+	.displayKingdomsList th {
+		background-color: lightgray;
+		border: 1px solid black;
+	}
+	
+	.displayKingdomsList td {
+		padding: 10px;
+		border: 1px solid black;
+	}

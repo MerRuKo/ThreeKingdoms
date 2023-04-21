@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="displayGroupMapper">
+	
+	<select id="displayKingdomsList" resultType="tk.dto.group.DisplayKingdomsDTO">
+		SELECT
+		kingdomsno,
+		kingdomsnm,
+		capital,
+		founder,
+		foundyear,
+		fallyear
+		
+		FROM tk_m_kingdoms kd
+		
+		ORDER BY kd.kingdomsno ASC
+	</select>
+	
+	<select id="displayBelongsList" resultType="tk.dto.group.DisplayBelongsDTO">
+		SELECT
+		belongsno,
+		belongsnm,
+		castle,
+		city
+		
+		FROM tk_m_belongs bl
+		
+		ORDER BY bl.belongsno ASC
+	</select>
+
+</mapper>

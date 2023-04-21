@@ -8,6 +8,7 @@
 	<mappers>
 		<mapper resource="mapper/searchGeneralMapper.xml" />
 		<mapper resource="mapper/applyGeneralMapper.xml" />
+		<mapper resource="mapper/displayGroupMapper.xml" />
 	</mappers>
 	
 </configuration>
