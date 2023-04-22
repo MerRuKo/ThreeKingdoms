@@ -17,6 +17,7 @@
 			<th>소속명</th>
 			<th>성명</th>
 			<th>도시명</th>
+			<th>현인원</th>
 		</tr>
 		<c:forEach items="${displayBelongsList }" var="displayBelongs">
 		<tr>
@@ -24,6 +25,7 @@
 			<td>${displayBelongs. belongsnm }</td>
 			<td>${displayBelongs. castle }</td>
 			<td>${displayBelongs. city }</td>
+			<td>${displayBelongs. belongscnt }</td>
 		</tr>
 		</c:forEach>
 	</table>

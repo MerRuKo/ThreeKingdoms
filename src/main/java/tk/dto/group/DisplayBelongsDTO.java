@@ -6,6 +6,7 @@ public class DisplayBelongsDTO {
 	private String belongsnm;
 	private String castle;
 	private String city;
+	private int belongscnt;
 	
 	public int getBelongsno() {
 		return belongsno;
@@ -30,6 +31,12 @@ public class DisplayBelongsDTO {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+	public int getBelongscnt() {
+		return belongscnt;
+	}
+	public void setBelongscnt(int belongscnt) {
+		this.belongscnt = belongscnt;
 	}
 	
 }

@@ -19,6 +19,7 @@
 			<th>시조</th>
 			<th>건국년</th>
 			<th>멸망년</th>
+			<th>현인원</th>
 		</tr>
 		<c:forEach items="${displayKingdomsList }" var="displayKingdoms">
 		<tr>
@@ -28,6 +29,7 @@
 			<td>${displayKingdoms. founder }</td>
 			<td>${displayKingdoms. foundyear }</td>
 			<td>${displayKingdoms. fallyear }</td>
+			<td>${displayKingdoms. kingdomscnt }</td>
 		</tr>
 		</c:forEach>
 	</table>

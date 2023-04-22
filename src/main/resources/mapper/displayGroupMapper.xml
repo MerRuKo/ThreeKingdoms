@@ -5,27 +5,49 @@
 <mapper namespace="displayGroupMapper">
 	
 	<select id="displayKingdomsList" resultType="tk.dto.group.DisplayKingdomsDTO">
-		SELECT
-		kingdomsno,
+		SELECT    
+		kd.kingdomsno,
+		kingdomsnm,
+		capital,
+		founder,
+		foundyear,
+		fallyear,
+		COUNT(ge.generalno) AS kingdomscnt
+		
+		FROM tk_m_kingdoms kd
+		
+		LEFT JOIN tk_m_general ge
+		ON ge.kingdomsno = kd.kingdomsno
+		
+		GROUP BY
+		kd.kingdomsno,
 		kingdomsnm,
 		capital,
 		founder,
 		foundyear,
 		fallyear
 		
-		FROM tk_m_kingdoms kd
-		
 		ORDER BY kd.kingdomsno ASC
 	</select>
 	
 	<select id="displayBelongsList" resultType="tk.dto.group.DisplayBelongsDTO">
 		SELECT
-		belongsno,
+		bl.belongsno,
+		belongsnm,
+		castle,
+		city,
+		COUNT(ge.generalno) AS belongscnt
+		
+		FROM tk_m_belongs bl
+		
+		LEFT JOIN tk_m_general ge
+		ON ge.belongsno = bl.belongsno
+		
+		GROUP BY
+		bl.belongsno,
 		belongsnm,
 		castle,
 		city
-		
-		FROM tk_m_belongs bl
 		
 		ORDER BY bl.belongsno ASC
 	</select>

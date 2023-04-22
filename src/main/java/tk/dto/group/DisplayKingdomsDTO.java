@@ -8,6 +8,7 @@ public class DisplayKingdomsDTO {
 	private String founder;
 	private String foundyear;
 	private String fallyear;
+	private int kingdomscnt;
 	
 	public int getKingdomsno() {
 		return kingdomsno;
@@ -44,6 +45,12 @@ public class DisplayKingdomsDTO {
 	}
 	public void setFallyear(String fallyear) {
 		this.fallyear = fallyear;
+	}
+	public int getKingdomscnt() {
+		return kingdomscnt;
+	}
+	public void setKingdomscnt(int kingdomscnt) {
+		this.kingdomscnt = kingdomscnt;
 	}
 	
 }
