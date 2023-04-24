@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>국가 목록</title>
+<title>소속목록</title>
 <link rel="stylesheet" type="text/css" href="css/displayBelongsList.css">
 </head>
 <body>

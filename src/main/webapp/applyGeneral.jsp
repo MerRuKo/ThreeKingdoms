@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>장수 신청</title>
+<title>장수신청</title>
 <link rel="stylesheet" type="text/css" href="css/applyGeneral.css">
 </head>
 <body>

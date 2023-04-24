@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>승인 대기</title>
+<title>승인대기</title>
 <link rel="stylesheet" type="text/css" href="css/applyGeneralList.css">
 </head>
 <body>

@@ -9,6 +9,7 @@
 		<mapper resource="mapper/searchGeneralMapper.xml" />
 		<mapper resource="mapper/applyGeneralMapper.xml" />
 		<mapper resource="mapper/displayGroupMapper.xml" />
+		<mapper resource="mapper/moveGroupMapper.xml" />
 	</mappers>
 	
 </configuration>

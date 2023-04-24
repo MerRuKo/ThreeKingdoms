@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>장수 상세</title>
+<title>승인상세</title>
 <link rel="stylesheet" type="text/css" href="css/applyGeneralDetail.css">
 </head>
 <body>

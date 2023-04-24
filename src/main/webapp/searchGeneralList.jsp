@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>장수</title>
+<title>장수관리</title>
 <link rel="stylesheet" type="text/css" href="css/searchGeneralList.css">
 </head>
 <body>

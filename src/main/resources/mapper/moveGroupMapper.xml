@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="moveGroupMapper">
+	
+	<select id="moveGroupList" resultType="tk.dto.move.MoveGroupDTO">
+		SELECT
+		generalno,
+		kingdomsnm AS kingdoms,
+		belongsnm AS belongs,
+		name,
+		nickname,
+		command,
+		power,
+		brain,
+		politic,
+		story
+		
+		FROM tk_m_general ge
+		
+		INNER JOIN tk_m_kingdoms kg
+		ON kg.kingdomsno = ge.kingdomsno
+		
+		INNER JOIN tk_m_belongs bl
+		ON bl.belongsno = ge.belongsno
+		
+		WHERE 1 = 1
+		<if test="searchName != null">
+		AND name LIKE '%' || #{searchName } || '%'
+		</if>
+		<if test="searchNickname != null">
+		AND nickname LIKE '%' || #{searchNickname } || '%'
+		</if>
+		<if test="searchKingdoms != null">
+		AND kingdomsnm LIKE '%' || #{searchKingdoms } || '%'
+		</if>
+		<if test="searchBelongs != null">
+		AND belongsnm LIKE '%' || #{searchBelongs } || '%'
+		</if>
+		
+		ORDER BY ge.generalno ASC
+	</select>
+	
+	<select id="moveGroupDetail" resultType="tk.dto.move.MoveGroupDTO">
+		SELECT
+		generalno,
+		kingdomsnm AS kingdoms,
+		belongsnm AS belongs,
+		name,
+		nickname,
+		command,
+		power,
+		brain,
+		politic,
+		story
+		
+		FROM tk_m_general ge
+		
+		INNER JOIN tk_m_kingdoms kg
+		ON kg.kingdomsno = ge.kingdomsno
+		
+		INNER JOIN tk_m_belongs bl
+		ON bl.belongsno = ge.belongsno
+		
+		WHERE ge.generalno = #{generalno}
+	</select>
+	
+	<update id="moveGroup">
+		UPDATE tk_m_general
+		
+		SET
+		kingdomsno = #{kingdomsno},
+		belongsno = #{belongsno}
+		
+		WHERE generalno = #{generalno}
+	</update>
+
+</mapper>

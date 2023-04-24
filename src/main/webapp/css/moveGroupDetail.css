@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+	.moveGroupDetail {
+		text-align: center;
+	}
+	
+	.moveGroupDetail img {
+		width: 350px;
+		height: 350px;
+		object-fit: cover;
+		object-position: 20% 10%;
+		border: 1px solid black;
+	}
+	
+	.moveGroupDetail table {
+		border-collapse: collapse;
+		font-size: 16px;
+		width: 50%;
+		max-width: 450px;
+		margin: 15px auto;
+	}
+	
+	.moveGroupDetail input[type="text"] {
+		text-align: center;
+		outline: none;
+		border: 0;
+		font-size: 16px;
+		width: 300px;
+	}
+	
+	.moveGroupDetail th {
+		background-color: lightgray;
+		border: 1px solid black;
+	}
+	
+	.moveGroupDetail td {
+		padding: 10px;
+		border: 1px solid black;
+	}
+	
+	.moveGroupDetail textarea {
+		width: 50%;
+		max-width: 500px;
+		height: 200px;
+		margin: 20px auto;
+		display: block;
+		border: 1px solid black;
+		padding: 10px;
+		font-size: 16px;
+		line-height: 1.5;
+		resize: none;
+	}
+	
+	.moveGroupDetail input[type="submit"] {
+		background-color: rgb(55, 55, 55);
+		color: white;
+		padding: 10px 20px;
+		margin-bottom: 10px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	
+	.moveGroupDetail input[type="button"] {
+		background-color: rgb(55, 55, 55);
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	
+	.moveGroupDetail input[type="submit"]:hover {
+		background-color: rgb(40, 40, 40);
+	}
+	
+	.moveGroupDetail input[type="button"]:hover {
+		background-color: rgb(40, 40, 40);
+	}
+	
+	.moveGroupDetail select {
+		padding: 5px 5px 5px 15px;
+		font-size: 16px;
+	}

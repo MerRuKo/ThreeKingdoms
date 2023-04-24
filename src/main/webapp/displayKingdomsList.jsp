@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>국가 목록</title>
+<title>국가목록</title>
 <link rel="stylesheet" type="text/css" href="css/displayKingdomsList.css">
 </head>
 <body>
