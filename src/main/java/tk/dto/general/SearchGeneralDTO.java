@@ -74,4 +74,11 @@ public class SearchGeneralDTO {
 		this.story = story;
 	}
 	
+	@Override
+	public String toString() {
+		return " SearchGeneralDTO [번호=" + generalno + ", 이름=" + name + ", 자=" + nickname + ", 국가="
+				+ kingdoms + ", 소속=" + belongs + ", 통솔=" + command + ", 무력=" + power + ", 지력=" + brain
+				+ ", 정치=" + politic + ", 열전=" + story + "]";
+	}
+	
 }

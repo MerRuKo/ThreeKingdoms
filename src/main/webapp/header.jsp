@@ -12,6 +12,7 @@
 	<a href="moveGroupList.jsp">이동관리</a>
 	<a href="displayKingdomsList.do">국가목록</a>
 	<a href="displayBelongsList.do">소속목록</a>
+	<a href="selectBatchList.jsp">배치실행</a>
 	<a href="#">내정보</a>
 	<a href="#">로그인</a>
 </header>

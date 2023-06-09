@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+	.selectBatchList {
+		text-align: center;
+		font-size: 30px;
+	}
+	
+	.selectBatchList input[type="button"] {
+		background-color: rgb(55, 55, 55);
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 18px;
+	}
