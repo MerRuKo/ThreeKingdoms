@@ -8,7 +8,7 @@ Eclipse
 https://www.eclipse.org/downloads/
 
 
-Orcle 11g
+Oracle 11g
 
 https://www.oracle.com/database/technologies/xe-prior-release-downloads.html\
 
