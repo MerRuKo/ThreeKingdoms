@@ -42,18 +42,26 @@ Git(깃) 사용법
 * 2020년 기점으로 마스터 브랜치 명칭이 master에서 main으로 바뀌었으므로 참고.
 여기선 main으로 통일하지만 예전 프로젝트들은 master로 바꿔야 됨.
 
-유지 보수
+* git 오랜만에 혹은 설치 후 처음 가동때에는
+git config --global user.name
+git config --global user.email
+얘네들 쳐보고 값 설정 안돼있으면
+git config --global user.name "MerRuKo"
+git config --global user.email "mrkim9427@naver.com"
+입력해서 값 설정 먼저 해야함. (안 그럼 커밋때 에러남.)
+
+① 현상태 커밋,푸쉬(개발툴에서 해도 됨)
 1. git status
 2. git add .
 3. git commit -m "리포지토리명"
 4. git push origin main
 
-삭제(로컬+원격)
+② 삭제(로컬+원격)
 1. git rm sample.txt
-2. git commit -m "Delete sample.txt"
+2. git commit -m "Delete -sample.txt"
 3. git push origin main
 
-새 리포지토리
+③ 새 리포지토리 팠을 때
 1. 원하는 소스폴더에서 git bash를 실행시킵니다.
 
 2. $ git init
