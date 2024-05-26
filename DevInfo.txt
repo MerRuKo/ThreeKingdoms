@@ -35,6 +35,17 @@ Password : 네이버 마이박스 DevInfo.txt 참조.
 (아니면 https://github.com/settings/tokens에서 Study 토큰 클릭해서 regenerate 한 토큰코드)
 
 
+Oracle Account
+
+관리자
+User : system
+Password : 0319
+
+유저
+User : HR
+Password : 1234
+
+
 ---------------------------------------------------------------------------------
 
 Git(깃) 사용법
