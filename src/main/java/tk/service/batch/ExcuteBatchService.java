@@ -14,7 +14,7 @@ import tk.dto.general.SearchGeneralDTO;
 @Service
 public class ExcuteBatchService {
 	
-	private static String fileName = "workspace\\ThreeKingdoms\\src\\main\\webapp\\logs\\generalInfoList.txt";
+	private static String fileName = "C:\\workspace\\ThreeKingdoms\\src\\main\\webapp\\logs\\generalInfoList.txt";
 	private String timeStamp;
 	
 	public void createTextFile(List<SearchGeneralDTO> generalInfoList) {		
