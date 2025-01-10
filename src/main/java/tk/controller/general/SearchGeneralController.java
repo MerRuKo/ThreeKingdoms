@@ -18,13 +18,13 @@ public class SearchGeneralController {
 	@RequestMapping("/searchGeneralList.do")
 	public String searchGeneralList(SearchGeneralConditionDTO searchGeneralConditionDTO, Model model) {
 		model.addAttribute("searchGeneralList", searchGeneralService.searchGeneralList(searchGeneralConditionDTO));
-		return "searchGeneralList.jsp";
+		return "general/searchGeneralList";
 	}
 	
 	@RequestMapping("/searchGeneralDetail.do")
 	public String searchGeneralDetail(SearchGeneralDTO searchGeneralDTO, Model model) {
 		model.addAttribute("searchGeneralDetail", searchGeneralService.searchGeneralDetail(searchGeneralDTO));
-		return "searchGeneralDetail.jsp";
+		return "general/searchGeneralDetail";
 	}
 
 }

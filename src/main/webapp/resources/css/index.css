@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+	.index {
+		text-align: center;
+		margin: 20px;
+	}
+	
+	.index img {
+		width: 37%;
+	}
+	
+	.index p {
+		font-size: 50px;
+	}

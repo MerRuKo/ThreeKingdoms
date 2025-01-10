@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+	.searchMoveGroupList {
+		text-align: center;
+		font-size: 30px;
+	}
+	
+	.searchMoveGroupList label {
+  		font-weight: bold;
+		margin-right: 10px;
+	}
+	
+	.searchMoveGroupList input[type="text"] {
+		padding: 10px;
+		margin-bottom: 15px;
+		border-radius: 5px;
+		font-size: 16px;
+		width: 300px;
+	}
+
+	.searchMoveGroupList input[type="submit"] {
+		background-color: rgb(55, 55, 55);
+		color: white;
+		padding: 10px 20px;
+		margin-bottom: 10px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	
+	.searchMoveGroupList input[type="button"] {
+		background-color: rgb(55, 55, 55);
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	.searchMoveGroupList input[type="submit"]:hover {
+		background-color: rgb(40, 40, 40);
+	}
+	
+	.searchMoveGroupList input[type="button"]:hover {
+		background-color: rgb(40, 40, 40);
+	}
+
+	.searchMoveGroupList table {
+		border-collapse: collapse;
+		width: 50%;
+		font-size: 24px;
+		table-layout: fixed;
+		margin: 20px auto;
+	}
+	
+	.searchMoveGroupList a {
+		text-decoration: none;
+		color: rgb(206, 158, 34);
+	}
+		
+	.searchMoveGroupList th {
+		background-color: lightgray;
+		border: 1px solid black;
+	}
+	
+	.searchMoveGroupList td {
+		padding: 10px;
+		border: 1px solid black;
+	}

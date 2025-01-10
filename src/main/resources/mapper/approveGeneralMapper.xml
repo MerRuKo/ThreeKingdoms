@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="approveGeneralMapper">
+	
+	<select id="approveGeneralList" resultType="tk.dto.general.ApproveGeneralDTO">
+		SELECT
+		applyno,
+		name,
+		nickname,
+		command,
+		power,
+		brain,
+		politic,
+		story
+		
+		FROM tk_k_general ge
+		
+		ORDER BY ge.applyno DESC
+	</select>
+	
+	<select id="approveGeneralDetail" resultType="tk.dto.general.ApproveGeneralDTO">
+		SELECT
+		applyno,
+		name,
+		nickname,
+		command,
+		power,
+		brain,
+		politic,
+		story
+		
+		FROM tk_k_general ge
+		
+		WHERE ge.applyno = #{applyno}
+	</select>
+	
+	<insert id="approveGeneralInsert">
+		INSERT INTO tk_m_general (
+			generalno,
+			kingdomsno,
+			belongsno,
+			name,
+			nickname,
+			command,
+			power,
+			brain,
+			politic,
+			story
+		)
+		
+		VALUES (
+			(SELECT NVL(MAX(generalno), 0)+1 FROM tk_m_general),
+			0,
+			0,
+			#{name},
+			#{nickname},
+			#{command},
+			#{power},
+			#{brain},
+			#{politic},
+			#{story}
+		)
+	</insert>
+	
+	<delete id="approveGeneralDelete">
+		DELETE
+		
+		FROM tk_k_general ge
+		
+		WHERE ge.applyno = #{applyno}
+	</delete>
+	
+</mapper>

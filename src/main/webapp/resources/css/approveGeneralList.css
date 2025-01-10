@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+	.approveGeneralList {
+		text-align: center;
+		font-size: 30px;
+	}
+	
+	.approveGeneralList input[type="button"] {
+		background-color: rgb(55, 55, 55);
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	
+	.approveGeneralList input[type="button"]:hover {
+		background-color: rgb(40, 40, 40);
+	}
+
+	.approveGeneralList table {
+		border-collapse: collapse;
+		width: 90%;
+		font-size: 24px;
+		table-layout: fixed;
+		margin: 20px auto;
+	}
+	
+	.approveGeneralList a {
+		text-decoration: none;
+		color: rgb(206, 158, 34);
+	}
+		
+	.approveGeneralList th {
+		background-color: lightgray;
+		border: 1px solid black;
+	}
+	
+	.approveGeneralList td {
+		padding: 10px;
+		border: 1px solid black;
+	}

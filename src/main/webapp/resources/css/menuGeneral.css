@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+	.mainGeneralMenu {
+		text-align: center;
+		font-size: 30px;
+	}
+	
+	.mainGeneralMenu label {
+  		font-weight: bold;
+		margin-right: 10px;
+	}
+	
+	.mainGeneralMenu input[type="text"] {
+		padding: 10px;
+		margin-bottom: 15px;
+		border-radius: 5px;
+		font-size: 16px;
+		width: 300px;
+	}
+
+	.mainGeneralMenu input[type="submit"] {
+		background-color: rgb(55, 55, 55);
+		color: white;
+		padding: 10px 20px;
+		margin-bottom: 10px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	
+	.mainGeneralMenu input[type="button"] {
+		background-color: rgb(55, 55, 55);
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	.mainGeneralMenu input[type="submit"]:hover {
+		background-color: rgb(40, 40, 40);
+	}
+	
+	.mainGeneralMenu input[type="button"]:hover {
+		background-color: rgb(40, 40, 40);
+	}
+
+	.mainGeneralMenu table {
+		border-collapse: collapse;
+		width: 90%;
+		font-size: 24px;
+		table-layout: fixed;
+		margin: 20px auto;
+	}
+	
+	.mainGeneralMenu a {
+		text-decoration: none;
+		color: rgb(206, 158, 34);
+	}
+		
+	.mainGeneralMenu th {
+		background-color: lightgray;
+		border: 1px solid black;
+	}
+	
+	.mainGeneralMenu td {
+		padding: 10px;
+		border: 1px solid black;
+	}

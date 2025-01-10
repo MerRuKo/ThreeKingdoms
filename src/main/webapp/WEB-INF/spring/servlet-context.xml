@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+		
+	<!-- 2 : 이전에 applicationContext 스캔하고 옴 -->
+	<!-- 컨트롤러 빈 생성 -->
+	<context:component-scan base-package="tk.controller" />
+	
+	<!-- 파일 업로드 설정 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="100000000" />
+	</bean>
+	
+	<!-- 예외 처리 설정 -->
+	<bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="defaultErrorView" value="error/errorDefault" />
+		<property name="exceptionMappings">
+			<props>
+				<prop key="java.lang.IllegalArgumentException">
+					error/errorIllegalArgument
+				</prop>
+				<prop key="java.lang.NullPointerException">
+					error/errorNullPointer
+				</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- 어노테이션의 인식과 기능을 활성화 -->
+    <mvc:annotation-driven />
+    
+    <!-- 정적 리소스 처리를 기본 서블릿에 위임 -->
+    <mvc:default-servlet-handler />
+    
+	<!-- 뷰 리졸버 설정 (java와의 연계로 URL에 .jsp 없이 화면 천이) -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+    
+    <!-- 정적 리소스 매핑 (뷰 리졸버로 인해 정적 리소스까지 서블릿으로 전달되므로 404 에러가 뜨는데 그걸 방지하는 설정)  -->
+    <mvc:resources mapping="/css/**" location="/resources/css/" />
+    <mvc:resources mapping="/images/**" location="/resources/images/" />
+    <mvc:resources mapping="/js/**" location="/resources/js/" />
+	
+</beans>

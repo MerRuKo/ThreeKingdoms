@@ -26,7 +26,7 @@ public class ExcuteBatchController {
 		
 		excuteBatchService.createTextFile(generalInfoList);
 		
-		return "selectBatchList.jsp";
+		return "batch/selectBatchList";
 	}
 
 }

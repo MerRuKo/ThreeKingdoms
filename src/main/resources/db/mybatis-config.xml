@@ -7,9 +7,11 @@
 	
 	<mappers>
 		<mapper resource="mapper/searchGeneralMapper.xml" />
-		<mapper resource="mapper/applyGeneralMapper.xml" />
-		<mapper resource="mapper/displayGroupMapper.xml" />
+		<mapper resource="mapper/registerGeneralMapper.xml" />
+		<mapper resource="mapper/approveGeneralMapper.xml" />
 		<mapper resource="mapper/moveGroupMapper.xml" />
+		<mapper resource="mapper/displayBelongsMapper.xml" />
+		<mapper resource="mapper/displayKingdomsMapper.xml" />
 	</mappers>
-	
+
 </configuration>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="registerGeneralMapper">
+	
+	<insert id="registerGeneral">
+		INSERT INTO tk_k_general (
+			applyno,
+			name,
+			nickname,
+			command,
+			power,
+			brain,
+			politic,
+			story
+		)
+		
+		VALUES (
+			(SELECT NVL(MAX(applyno), 0)+1 FROM tk_k_general),
+			#{name},
+			#{nickname},
+			#{command},
+			#{power},
+			#{brain},
+			#{politic},
+			#{story}
+		)
+	</insert>
+	
+</mapper>
