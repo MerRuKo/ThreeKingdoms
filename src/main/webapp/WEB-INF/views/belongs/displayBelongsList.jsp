@@ -5,8 +5,8 @@
 <html>
 <head>
 <title>소속목록</title>
-<script type="text/javascript" src="js/displayBelongsList.js" ></script> 
-<link rel="stylesheet" type="text/css" href="css/displayBelongsList.css">
+<script type="text/javascript" src="js/belongs/displayBelongsList.js" ></script> 
+<link rel="stylesheet" type="text/css" href="css/belongs/displayBelongsList.css">
 </head>
 <body>
 <jsp:include page="../header.jsp" />

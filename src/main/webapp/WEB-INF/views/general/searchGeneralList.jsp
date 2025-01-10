@@ -5,7 +5,7 @@
 <html>
 <head>
 <title>장수검색</title>
-<link rel="stylesheet" type="text/css" href="css/searchGeneralList.css">
+<link rel="stylesheet" type="text/css" href="css/general/searchGeneralList.css">
 </head>
 <body>
 <jsp:include page="../header.jsp" />

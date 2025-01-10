@@ -18,9 +18,9 @@ public class DisplayBelongsController {
 		return "belongs/displayBelongsList";
 	}
 	
-	@RequestMapping("/displayBelongsList.do")
-	public String searchBelongsList(Model model) {
-		model.addAttribute("displayBelongsList", displayBelongsService.displayBelongsList());
+	@RequestMapping("/showBelongsList.do")
+	public String showBelongsList(Model model) {
+		model.addAttribute("displayBelongsList", displayBelongsService.showBelongsList());
 		return "belongs/displayBelongsList";
 	}
 	

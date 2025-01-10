@@ -18,9 +18,9 @@ public class DisplayKingdomsController {
 		return "kingdoms/displayKingdomsList";
 	}
 	
-	@RequestMapping("/displayKingdomsList.do")
-	public String searchKingdomsList(Model model) {
-		model.addAttribute("displayKingdomsList", displayKingdomsService.displayKingdomsList());
+	@RequestMapping("/showKingdomsList.do")
+	public String showKingdomsList(Model model) {
+		model.addAttribute("displayKingdomsList", displayKingdomsService.showKingdomsList());
 		return "kingdoms/displayKingdomsList";
 	}
 	

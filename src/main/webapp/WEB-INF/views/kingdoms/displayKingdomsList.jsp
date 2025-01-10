@@ -5,8 +5,8 @@
 <html>
 <head>
 <title>국가목록</title>
-<script type="text/javascript" src="js/displayKingdomsList.js" ></script> 
-<link rel="stylesheet" type="text/css" href="css/displayKingdomsList.css">
+<script type="text/javascript" src="js/kingdoms/displayKingdomsList.js" ></script> 
+<link rel="stylesheet" type="text/css" href="css/kingdoms/displayKingdomsList.css">
 </head>
 <body>
 <jsp:include page="../header.jsp" />

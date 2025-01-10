@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+	.menuGeneral {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.menuGeneral input[type="button"] {
+		background-color: rgb(55, 55, 55);
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	
+	.menuGeneral input[type="button"]:hover {
+		background-color: rgb(40, 40, 40);
+	}

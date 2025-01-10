@@ -14,8 +14,8 @@ public class DisplayKingdomsService {
 	@Autowired
 	private SqlSessionTemplate excuteQuery;
 	
-	public List<DisplayKingdomsDTO> displayKingdomsList() {
-		return excuteQuery.selectList("displayKingdomsMapper.displayKingdomsList");
+	public List<DisplayKingdomsDTO> showKingdomsList() {
+		return excuteQuery.selectList("displayKingdomsMapper.showKingdomsList");
 	}
 
 }

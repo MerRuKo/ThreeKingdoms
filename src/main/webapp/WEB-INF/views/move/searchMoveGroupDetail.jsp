@@ -5,7 +5,7 @@
 <html>
 <head>
 <title>이동상세</title>
-<link rel="stylesheet" type="text/css" href="css/searchMoveGroupDetail.css">
+<link rel="stylesheet" type="text/css" href="css/move/searchMoveGroupDetail.css">
 </head>
 <body>
 <jsp:include page="../header.jsp" />

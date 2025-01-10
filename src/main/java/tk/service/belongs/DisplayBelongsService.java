@@ -15,8 +15,8 @@ public class DisplayBelongsService {
 	@Autowired
 	private SqlSessionTemplate excuteQuery;
 
-	public List<DisplayBelongsDTO> displayBelongsList() {
-		return excuteQuery.selectList("displayBelongsMapper.displayBelongsList");
+	public List<DisplayBelongsDTO> showBelongsList() {
+		return excuteQuery.selectList("displayBelongsMapper.showBelongsList");
 	}
 
 }

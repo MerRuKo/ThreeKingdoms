@@ -4,7 +4,7 @@
 
 <mapper namespace="displayBelongsMapper">
 	
-	<select id="displayBelongsList" resultType="tk.dto.group.DisplayBelongsDTO">
+	<select id="showBelongsList" resultType="tk.dto.group.DisplayBelongsDTO">
 		SELECT
 		bl.belongsno,
 		belongsnm,

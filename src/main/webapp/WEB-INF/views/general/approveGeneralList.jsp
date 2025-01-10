@@ -5,7 +5,7 @@
 <html>
 <head>
 <title>승인대기</title>
-<link rel="stylesheet" type="text/css" href="css/approveGeneralList.css">
+<link rel="stylesheet" type="text/css" href="css/general/approveGeneralList.css">
 </head>
 <body>
 <jsp:include page="../header.jsp" />

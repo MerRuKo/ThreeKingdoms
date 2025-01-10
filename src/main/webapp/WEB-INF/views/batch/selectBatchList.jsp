@@ -5,8 +5,8 @@
 <html>
 <head>
 <title>배치실행</title>
-<script type="text/javascript" src="js/selectBatchList.js" ></script> 
-<link rel="stylesheet" type="text/css" href="css/selectBatchList.css">
+<script type="text/javascript" src="js/batch/selectBatchList.js" ></script> 
+<link rel="stylesheet" type="text/css" href="css/batch/selectBatchList.css">
 </head>
 <body>
 <jsp:include page="../header.jsp" />

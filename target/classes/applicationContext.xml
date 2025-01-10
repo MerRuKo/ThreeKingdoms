@@ -10,7 +10,7 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
 		
-	<!-- 1 : 이후에 presentation-layer 스캔하러 감 -->
+	<!-- 1 : 이후에 servlet-context 스캔하러 감 -->
 	<!-- 서비스 빈 생성 -->
 	<context:component-scan base-package="tk.service" />
 	

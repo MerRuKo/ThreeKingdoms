@@ -5,8 +5,7 @@
 <html>
 <head>
 <title>이동관리</title>
-<script type="text/javascript" src="js/moveGroupList.js" ></script> 
-<link rel="stylesheet" type="text/css" href="css/searchMoveGroupList.css">
+<link rel="stylesheet" type="text/css" href="css/move/searchMoveGroupList.css">
 </head>
 <body>
 <jsp:include page="../header.jsp" />

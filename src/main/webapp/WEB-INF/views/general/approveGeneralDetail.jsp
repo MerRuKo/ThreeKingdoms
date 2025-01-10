@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>승인상세</title>
-<link rel="stylesheet" type="text/css" href="css/approveGeneralDetail.css">
+<link rel="stylesheet" type="text/css" href="css/general/approveGeneralDetail.css">
 </head>
 <body>
 <jsp:include page="../header.jsp" />

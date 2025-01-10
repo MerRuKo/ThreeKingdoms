@@ -31,8 +31,8 @@ public class SearchMoveGroupController {
 	@RequestMapping("/searchMoveGroupDetail.do")
 	public String moveGroupDetail(MoveGroupDTO moveGroupDTO, Model model) {
 		model.addAttribute("searchMoveGroupDetail", moveGroupService.moveGroupDetail(moveGroupDTO));
-		model.addAttribute("displayKingdomsList", displayKingdomsService.displayKingdomsList());
-		model.addAttribute("displayBelongsList", displayBelongsService.displayBelongsList());
+		model.addAttribute("displayKingdomsList", displayKingdomsService.showKingdomsList());
+		model.addAttribute("displayBelongsList", displayBelongsService.showBelongsList());
 		return "move/searchMoveGroupDetail";
 	}
 	

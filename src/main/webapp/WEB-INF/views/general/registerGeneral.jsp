@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>신규등록</title>
-<link rel="stylesheet" type="text/css" href="css/registerGeneral.css">
+<link rel="stylesheet" type="text/css" href="css/general/registerGeneral.css">
 </head>
 <body>
 <jsp:include page="../header.jsp" />

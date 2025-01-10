@@ -40,7 +40,7 @@
     <!-- 정적 리소스 처리를 기본 서블릿에 위임 -->
     <mvc:default-servlet-handler />
     
-	<!-- 뷰 리졸버 설정 (java와의 연계로 URL에 .jsp 없이 화면 천이) -->
+	<!-- 뷰 리졸버 설정 (jsp파일을 보안 좋은 WEB-INF 안에 둘 수 있음 + URL에 .jsp 없이 화면 천이) -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/" />
         <property name="suffix" value=".jsp" />

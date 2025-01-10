@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>장수상세</title>
-<link rel="stylesheet" type="text/css" href="css/searchGeneralDetail.css">
+<link rel="stylesheet" type="text/css" href="css/general/searchGeneralDetail.css">
 </head>
 <body>
 <jsp:include page="../header.jsp" />
