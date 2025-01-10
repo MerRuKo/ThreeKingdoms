@@ -1,4 +1,4 @@
-package tk.dto.group;
+package tk.dto.belongs;
 
 public class DisplayBelongsDTO {
 	

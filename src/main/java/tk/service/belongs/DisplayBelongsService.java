@@ -6,8 +6,8 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tk.dto.group.DisplayBelongsDTO;
-import tk.dto.group.DisplayKingdomsDTO;
+import tk.dto.belongs.DisplayBelongsDTO;
+import tk.dto.kingdoms.DisplayKingdomsDTO;
 
 @Service
 public class DisplayBelongsService {

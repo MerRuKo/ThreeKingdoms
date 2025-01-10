@@ -4,7 +4,7 @@
 
 <mapper namespace="displayKingdomsMapper">
 	
-	<select id="showKingdomsList" resultType="tk.dto.group.DisplayKingdomsDTO">
+	<select id="showKingdomsList" resultType="tk.dto.kingdoms.DisplayKingdomsDTO">
 		SELECT    
 		kd.kingdomsno,
 		kingdomsnm,
