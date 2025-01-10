@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import tk.dto.belongs.DisplayBelongsDTO;
-import tk.dto.kingdoms.DisplayKingdomsDTO;
 
 @Service
 public class DisplayBelongsService {
